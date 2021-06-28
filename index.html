@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <div class="wrapper">
+        <div id="container" class="container">
+            <h1 id="imkon" class="text-center text-white ">Sizda 10 ta imkon bor</h1>
+            <h2 class="text-center mt-5 text-white">Computer o'ylagan sonni toping</h2>
+            <h1 id="result" class="text-center text-danger mt-5"></h1>
+            <div class="text-center mt-5">
+                <input id="input" class="input" placeholder="O'ylangan sonni kiriting " type="tel">
+                <div class="text-center mt-5">
+                    <span id="help" onclick="ClickOn()"><i class="fas fa-question-circle d-block mb-3" > Help </i></span>
+                    <button id="button" class="btn btn-warning" onclick="start()    ">Topdim</button>
+                    
+                </div>
+            </div>
+            <div class="main-wrapper d-flex text-center justify-content-center">
+                <div id="wrapper-win" class="wrapper-win d-none">
+                    <img class="rasm1" src="rasm/happy.png" alt="">
+                    <h4>Congratulations you win</h4>
+                    <button  onClick="refresh()" class="btn btn-success btn2"><i  class="fas fa-sync-alt"></i></button>
+                </div>
+                <div id="wrapper-lose" class="wrapper-lose d-none ">
+                    <img class="rasm1" src="rasm/sad.png" alt="">
+                    <h4>Unfortunately You lose</h4>
+                    <button  onClick="refresh()" class="btn btn-success btn2"><i  class="fas fa-sync-alt"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
